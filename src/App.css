@@ -1,0 +1,17 @@
+.rotating-div {
+
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .rotating-div:hover {
+    animation: rotateAnimation 1s infinite alternate;
+  }
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
